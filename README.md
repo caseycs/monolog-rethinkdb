@@ -9,6 +9,8 @@ Execute:
 $ composer require caseycs/monolog-rethinkdb
 ```
 
+Or:
+
 Add this lines to your composer.json:
 
 ```json
@@ -41,4 +43,4 @@ $log->pushHandler($handler);
 
 ## Copyright
 
-Copyright (C) 2015 Ilia kondrashov, released under the MIT License.
+Copyright &copy; 2015 Ilia kondrashov, released under the MIT License.
