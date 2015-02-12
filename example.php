@@ -7,6 +7,12 @@ use Monolog\Handler\StreamHandler;
 $connection = r\connect('localhost');
 $connection->useDb('test');
 
+try {
+    r\db("test")->table("log")->run($connection);
+} catch (\Exception $e) {
+    r\db("test")->tableCreate("log")->run($connection);
+}
+
 // create a log channel
 $log = new Logger('channel');
 $log->pushHandler(new StreamHandler('php://stdout', Logger::INFO));
@@ -17,7 +23,7 @@ $faker = Faker\Factory::create('en_US');
 $levels = [Logger::INFO,Logger::WARNING,Logger::ERROR,Logger::ERROR];
 $tags = $faker->words(20);
 
-for ($i = 0; $i <= 5; $i ++) {
+for ($i = 0; $i <= 10; $i ++) {
     $level = $faker->randomElement($levels);
     $log->addRecord($level, $faker->sentence(), ['tag1' => $faker->randomElement($tags), 'tag2' => $faker->randomElement($tags)]);
 }
