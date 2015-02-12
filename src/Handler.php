@@ -41,7 +41,7 @@ class Handler extends AbstractProcessingHandler
         $record['datetime'] = $rDatetime;
 
         //$result =
-        r\table("log")->insert($record, ['durability' => 'soft'])->run($this->connection);
+        r\table("log")->insert($record, ['durability' => 'soft'])->run($this->connection, ['noreply' => true]);
 //        echo "Insert: $result\n";
     }
 }
