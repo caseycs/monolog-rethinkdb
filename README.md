@@ -43,4 +43,4 @@ $log->pushHandler($handler);
 
 ## Copyright
 
-Copyright &copy; 2015 Ilia kondrashov, released under the MIT License.
+Copyright &copy; 2015 Ilia Kondrashov, released under the MIT License.
