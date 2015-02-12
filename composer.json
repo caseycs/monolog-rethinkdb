@@ -1,4 +1,16 @@
 {
+    "name": "caseycs/monolog-rethinkdb",
+    "type": "library",
+    "description": "RethinkDB handler for Monolog",
+    "keywords": ["log", "logging", "logger", "rethinkdb"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilia Kondrashov",
+            "email": "caseycs@gmail.com",
+            "homepage": "https://github.com/caseycs/monolog-rethinkdb"
+        }
+    ],
     "require": {
         "monolog/monolog": "~1.12",
         "danielmewes/php-rql": "~1.16"
