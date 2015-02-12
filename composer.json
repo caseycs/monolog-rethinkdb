@@ -1,0 +1,14 @@
+{
+    "require": {
+        "monolog/monolog": "~1.12",
+        "danielmewes/php-rql": "~1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonologRethinkDBHandler\\": "./src/"
+        }
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4"
+    }
+}
