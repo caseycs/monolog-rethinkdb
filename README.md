@@ -1,5 +1,5 @@
 # monolog-rethinkdb
-RethinkDB handler for Monolog
+[RethinkDB](http://rethinkdb.com/) handler for [Monolog](https://github.com/Seldaek/monolog)
 
 ## Installation
 
