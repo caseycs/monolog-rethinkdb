@@ -16,7 +16,7 @@ Add this lines to your composer.json:
 ```json
 {
     "require": {
-        "caseycs/monolog-rethinkdb": "0.1"
+        "caseycs/monolog-rethinkdb": "~0.1"
     }
 }
 ```
